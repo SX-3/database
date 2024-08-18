@@ -3,6 +3,7 @@
 	"author": "SX3",
 	"license": "MIT",
 	"version": "1.0.0",
+	"description": "A wrapper around the IndexedDB API.",
 	"homepage": "https://sx-3.github.io/database",
 	"repository": {
 		"type": "git",
