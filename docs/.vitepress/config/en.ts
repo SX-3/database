@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 const en = defineConfig({
 	lang: "en-US",
-	description: "A VitePress Site",
+	description: "Modern IndexedDB wrapper",
 
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config

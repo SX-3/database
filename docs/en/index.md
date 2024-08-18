@@ -15,10 +15,10 @@ hero:
       link: /guide/introduction
 
 features:
-  - title: Нативный
-    details: Все API идентичны IndexedDB, и обёрнуты для удобного использования
-  - title: Базируется на миграциях
-    details: Позволяет управлять версионностью с помощью миграций и не писать тонны неструктурированного кода
-  - title: Минималистичный
-    details: Оборачивает неудобный API и оставляет прямой доступ к остальным
+  - title: Native
+    details: All APIs are identical to IndexedDB, and are wrapped for easy use.
+  - title: Based on migrations
+    details: Allows you to manage versioning using migrations without writing many of unstructured code
+  - title: Minimalistic
+    details: Wraps the awkward API and leaves direct access to the rest
 ---

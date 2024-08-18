@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 const ru = defineConfig({
-	description: "A VitePress Site",
+	description: "Современная обёртка IndexedDB",
 	lang: "ru-RU",
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
