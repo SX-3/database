@@ -18,7 +18,8 @@
 	"scripts": {
 		"build": "tsc && vite build",
 		"test": "vitest",
-		"docs:build": "pnpm build && pnpm --filter docs build"
+		"docs:build": "pnpm build && pnpm --filter docs build",
+		"release": "pnpm test && pnpm build && pnpm publish"
 	},
 	"devDependencies": {
 		"@testing-library/dom": "^10.4.0",
