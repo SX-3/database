@@ -3,3 +3,7 @@
 # SX3 Database
 
 This is a wrapper around the IndexedDB API.
+
+## Documentation
+
+[Documentation](https://sx-3.github.io/database/)
