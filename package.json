@@ -1,0 +1,33 @@
+{
+	"name": "@sx3/database",
+	"version": "1.0.0",
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"types": "./dist/all.d.ts",
+	"main": "./dist/database.umd.cjs",
+	"module": "./dist/database.js",
+	"exports": {
+		".": {
+			"import": "./dist/database.js",
+			"require": "./dist/database.umd.cjs"
+		}
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc && vite build",
+		"test": "vitest",
+		"docs:build": "pnpm build && pnpm --filter docs build"
+	},
+	"devDependencies": {
+		"@testing-library/dom": "^10.4.0",
+		"@vitest/browser": "^2.0.5",
+		"playwright": "^1.46.0",
+		"typescript": "^5.5.4",
+		"vite": "^5.4.1",
+		"vite-plugin-dts": "^4.0.3",
+		"vitest": "^2.0.5"
+	},
+	"packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
+}
