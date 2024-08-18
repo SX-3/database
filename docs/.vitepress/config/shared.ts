@@ -3,7 +3,7 @@ import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
 
 const shared = defineConfig({
 	title: "SX3 Database",
-	base: "database",
+	base: "/database",
 	rewrites: {
 		"en/:rest*": ":rest*",
 	},
