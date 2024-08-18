@@ -2,7 +2,7 @@
 	"name": "@sx3/database",
 	"author": "SX3",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A wrapper around the IndexedDB API.",
 	"homepage": "https://sx-3.github.io/database",
 	"repository": {
@@ -30,7 +30,8 @@
 	"exports": {
 		".": {
 			"import": "./dist/database.js",
-			"require": "./dist/database.umd.cjs"
+			"require": "./dist/database.umd.cjs",
+			"types": "./dist/all.d.ts"
 		}
 	},
 	"scripts": {
