@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/vitepress)](https://www.npmjs.com/package/vitepress)
+[![npm](https://img.shields.io/npm/v/@sx3/database)](https://www.npmjs.com/package/@sx3/database)
 
 # SX3 Database
 
