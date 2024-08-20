@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Начать
-      link: /guide/quickstart
+      link: /ru/guide/quickstart
     - theme: alt
       text: Примеры
-      link: /guide/introduction
+      link: /ru/guide/introduction
 
 features:
   - title: Нативный
