@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@hywax/vitepress-yandex-metrika':
+        specifier: ^0.4.0
+        version: 0.4.0(vitepress@1.3.2(@algolia/client-search@4.24.0)(@types/node@22.4.0)(postcss@8.4.41)(search-insights@2.16.3)(typescript@5.5.4))
       '@testing-library/dom':
         specifier: ^10.4.0
         version: 10.4.0
@@ -321,6 +324,11 @@ packages:
 
   '@floating-ui/utils@0.2.7':
     resolution: {integrity: sha512-X8R8Oj771YRl/w+c1HqAC1szL8zWQRwFvgDwT129k9ACdBoud/+/rX9V0qiMl6LWUdP9voC2nDVZYPMQQsb6eA==}
+
+  '@hywax/vitepress-yandex-metrika@0.4.0':
+    resolution: {integrity: sha512-KMtlBKOWLu2mCMXwxRRm7oZs6kd/AA2u3Yv/90uhZPhyrFkjQ8oVsRiHH6OhqWVUsVD6GKFAWf8o274I0JIDZg==}
+    peerDependencies:
+      vitepress: ^1.1.4
 
   '@inquirer/confirm@3.1.22':
     resolution: {integrity: sha512-gsAKIOWBm2Q87CDfs9fEo7wJT3fwWIJfnDGMn9Qy74gBnNFOACDNfhUzovubbJjWnKLGBln7/NcSmZwj5DuEXg==}
@@ -1986,6 +1994,10 @@ snapshots:
       '@floating-ui/core': 1.6.7
 
   '@floating-ui/utils@0.2.7': {}
+
+  '@hywax/vitepress-yandex-metrika@0.4.0(vitepress@1.3.2(@algolia/client-search@4.24.0)(@types/node@22.4.0)(postcss@8.4.41)(search-insights@2.16.3)(typescript@5.5.4))':
+    dependencies:
+      vitepress: 1.3.2(@algolia/client-search@4.24.0)(@types/node@22.4.0)(postcss@8.4.41)(search-insights@2.16.3)(typescript@5.5.4)
 
   '@inquirer/confirm@3.1.22':
     dependencies:
