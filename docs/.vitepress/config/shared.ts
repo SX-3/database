@@ -7,7 +7,7 @@ const shared = defineConfig({
 	rewrites: {
 		"en/:rest*": ":rest*",
 	},
-	head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+	head: [["link", { rel: "icon", href: "/database/favicon.svg" }]],
 	themeConfig: {
 		socialLinks: [{ icon: "github", link: "https://github.com/SX-3/database" }],
 	},
