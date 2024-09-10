@@ -5,15 +5,15 @@
 ::: code-group
 
 ```bash [pnpm]
-pnpm add -D @sx3/database
+pnpm add @sx3/database
 ```
 
 ```bash [yarn]
-yarn add -D @sx3/database
+yarn add @sx3/database
 ```
 
 ```bash [npm]
-npm install -D @sx3/database
+npm install @sx3/database
 ```
 
 :::
