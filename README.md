@@ -106,7 +106,7 @@ await db.open();
 
 const usersStore = db.transaction("users").store();
 for await (const cursor of usersStore) {
-	console.log(cursor.value);
+  console.log(cursor.value);
 }
 ```
 
@@ -119,7 +119,7 @@ await db.open();
 const usersStore = db.transaction("users").store();
 const range = IDBKeyRange.bound(20, 30);
 for await (const cursor of usersStore.iterate(range)) {
-	console.log(cursor.value);
+  console.log(cursor.value);
 }
 ```
 
@@ -134,7 +134,7 @@ await db.open();
 const usersStore = db.transaction("users").store();
 const index = usersStore.index("age");
 for await (const cursor of index) {
-	console.log(cursor.value);
+  console.log(cursor.value);
 }
 ```
 
@@ -146,12 +146,12 @@ DB migrations are an array of schemas:
 import { MigrationSchema, Database } from "@sx3/database";
 
 const postsSchema: MigrationSchema = {
-	1: builder => builder.create("posts").index("id"),
+  1: builder => builder.create("posts").index("id"),
 };
 
 const commentsSchema: MigrationSchema = {
-	2: builder =>
-		builder.create("comments").index("entity", ["entity_name", "entity_id"]),
+  2: builder =>
+    builder.create("comments").index("entity", ["entity_name", "entity_id"]),
 };
 
 // Version calculated from migrations
@@ -166,11 +166,11 @@ Async migrations allow lazy loading while opening a connection to the database:
 import { MigrationSchema, Database } from "@sx3/database";
 
 const asyncSchema = () =>
-	new Promise<MigrationSchema>(resolve => {
-		resolve({
-			1: builder => builder.create("users").index("id"),
-		});
-	});
+  new Promise<MigrationSchema>(resolve => {
+    resolve({
+      1: builder => builder.create("users").index("id"),
+    });
+  });
 
 const db = await new Database("mydb", { migrations: [asyncSchema] }).open();
 ```
@@ -195,10 +195,10 @@ This code imports migration schemas from all your module stores:
 import { MigrationSchema, Database } from "@sx3/database";
 
 const schemas = import.meta.glob<MigrationSchema>("./modules/**/store/*.ts", {
-	import: "migrations",
+  import: "migrations",
 });
 
 const db = new Database("mydb", {
-	migrations: Object.values(schemas),
+  migrations: Object.values(schemas),
 });
 ```
