@@ -16,6 +16,7 @@ This is a migration based wrapper around the IndexedDB API. [Documentation](http
     - [Iterate over index](#iterate-over-index)
   - [Migrations](#database-migrations)
     - [Async migrations](#async-migrations)
+  - [Errors](#errors)
 
 ## Installation
 
@@ -201,4 +202,30 @@ const schemas = import.meta.glob<MigrationSchema>("./modules/**/store/*.ts", {
 const db = new Database("mydb", {
   migrations: Object.values(schemas),
 });
+```
+
+### Errors
+Within this library, 3 new errors have been introduced:
+
+- NotOpenedError - Database is not open
+- BlockedError - Database is locked
+- NoStoreProvidedError - No store provided for transaction
+
+```ts twoslash
+import {
+	Database,
+	NotOpenedError,
+	BlockedError,
+	NoStoreProvidedError,
+} from "@sx3/database";
+
+const db = new Database("mydb");
+
+try {
+	await db.open();
+} catch (error: unknown) {
+	if (error instanceof BlockedError) {
+		// Do something
+	}
+}
 ```
