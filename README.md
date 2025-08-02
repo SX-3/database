@@ -2,7 +2,7 @@
 
 # SX3 Database
 
-This is a migration based wrapper around the IndexedDB API. [Documentation](https://sx-3.github.io/database/)
+This is a migration based wrapper around the IndexedDB API.
 
 - [Installation](#installation)
 - [Usage](#usage)
