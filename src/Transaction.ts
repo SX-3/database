@@ -2,7 +2,7 @@ import { Store } from "./Store";
 import { NoStoreProvidedError } from "./utils/errors";
 import { createCompositeProxy } from "./utils/proxy";
 
-export interface Transaction extends IDBTransaction {}
+export interface Transaction extends IDBTransaction { }
 export class Transaction {
 	protected __trx: IDBTransaction;
 	constructor(trx: IDBTransaction) {
@@ -19,5 +19,9 @@ export class Transaction {
 			throw new NoStoreProvidedError(this.db.name);
 		}
 		return new Store(this.objectStore(name ?? this.stores[0]));
+	}
+
+	done() {
+		return new Promise<Event>(resolve => this.__trx.oncomplete = resolve);
 	}
 }
